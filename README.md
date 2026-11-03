@@ -13,6 +13,10 @@ write embedded-grade C++.
   calculators: input protections (precharge, lightning/TVS per DO-160G Section 22, ESD, hold-up), EMI
   filter with Middlebrook check, flyback and transformer (iGSE, Dowell), measurement error budgets,
   PCB rules (IPC-2221, IEC 60664-1); cross-checked against ngspice (PyTest, CI).
+- [`bldc-control-sim`](https://github.com/mehdi-belhaj-eea/bldc-control-sim) - BLDC / PMSM motor
+  control from the model to the embedded code: switched-inverter simulation (dead time, diodes), FOC
+  and six-step control tuned by the modulus and symmetrical optimum, C99 controller for Cortex-M4F
+  run in the loop against its Python reference (PyTest, CI).
 - [`scope-emi-toolkit`](https://github.com/mehdi-belhaj-eea/scope-emi-toolkit) - oscilloscope CSV
   parsing + dBuV spectrum + generic conducted-emissions pre-check (PyTest, CI).
 - [`embedded-dsp-cpp`](https://github.com/mehdi-belhaj-eea/embedded-dsp-cpp) - header-only ring

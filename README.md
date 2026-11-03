@@ -9,9 +9,10 @@ qualification testing. I automate the software side of the bench in Python and
 write embedded-grade C++.
 
 **Pinned projects**
-- [`hardware-design-kit`](https://github.com/mehdi-belhaj-eea/hardware-design-kit) - input-stage design
-  calculators: precharge, reverse polarity, lightning/TVS (DO-160G Section 22), ESD, hold-up,
-  DM/CM EMI filter with damping and Middlebrook check; cross-checked against ngspice (PyTest, CI).
+- [`hardware-design-kit`](https://github.com/mehdi-belhaj-eea/hardware-design-kit) - power-side design
+  calculators: input protections (precharge, lightning/TVS per DO-160G Section 22, ESD, hold-up), EMI
+  filter with Middlebrook check, flyback and transformer (iGSE, Dowell), measurement error budgets,
+  PCB rules (IPC-2221, IEC 60664-1); cross-checked against ngspice (PyTest, CI).
 - [`scope-emi-toolkit`](https://github.com/mehdi-belhaj-eea/scope-emi-toolkit) - oscilloscope CSV
   parsing + dBuV spectrum + generic conducted-emissions pre-check (PyTest, CI).
 - [`embedded-dsp-cpp`](https://github.com/mehdi-belhaj-eea/embedded-dsp-cpp) - header-only ring
